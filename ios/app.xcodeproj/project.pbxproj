@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-app-appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-app-appTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		3738F6423C4244DEA56D780F /* santral-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7CFFC9CD1CB47758EF9DCCC /* santral-light.otf */; };
+		59C58B8BBE37453C83FD259D /* santral-semi-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3589EE247264673B9AAE951 /* santral-semi-bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-app-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-appTests.release.xcconfig"; path = "Target Support Files/Pods-app-appTests/Pods-app-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E7CFFC9CD1CB47758EF9DCCC /* santral-light.otf */ = {isa = PBXFileReference; name = "santral-light.otf"; path = "../src/assets/fonts/santral-light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B3589EE247264673B9AAE951 /* santral-semi-bold.ttf */ = {isa = PBXFileReference; name = "santral-semi-bold.ttf"; path = "../src/assets/fonts/santral-semi-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				FFB2956463934D95964DC62E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +152,16 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		FFB2956463934D95964DC62E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E7CFFC9CD1CB47758EF9DCCC /* santral-light.otf */,
+				B3589EE247264673B9AAE951 /* santral-semi-bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +259,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3738F6423C4244DEA56D780F /* santral-light.otf in Resources */,
+				59C58B8BBE37453C83FD259D /* santral-semi-bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
