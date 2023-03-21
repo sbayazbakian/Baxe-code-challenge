@@ -55,6 +55,8 @@
 	<array>
 		<string>santral-light.otf</string>
 		<string>santral-semi-bold.ttf</string>
+		<string>toruspro-semibold.otf</string>
+		<string>santral-bold.ttf</string>
 	</array>
 </dict>
 </plist>

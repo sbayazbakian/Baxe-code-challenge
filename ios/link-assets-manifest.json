@@ -2,12 +2,20 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/santral-bold.ttf",
+      "sha1": "657e109baa097384ead5e8d5101355264eb5f8b5"
+    },
+    {
       "path": "src/assets/fonts/santral-light.otf",
       "sha1": "6a388a892b9840f411b936ce6f70c9a07180feab"
     },
     {
       "path": "src/assets/fonts/santral-semi-bold.ttf",
       "sha1": "1751ab39915ae2fb02b6203a236538982016417f"
+    },
+    {
+      "path": "src/assets/fonts/toruspro-semibold.otf",
+      "sha1": "53a8dbcaa41d5a12accdd73d2fc7a75a87f80205"
     }
   ]
 }
