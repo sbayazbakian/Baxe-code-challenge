@@ -33,6 +33,6 @@ To make the challenge a bit more dynamic, It's using faker API to fetch contacts
 ## Screenshots
 
 
-<img src="./screenshots/baxe_app_screenrecording.gif" width="33%" height="auto" style="border-radius: 15px;" />
-<img src="./screenshots/baxe_app_screenshots_1.png" width="33%" height="auto" style="border-radius: 15px;" />
-<img src="./screenshots/baxe_app_screenshots_2.png" width="33%" height="auto" style="border-radius: 15px;" />
+<img src="./screenshots/baxe_app_screenrecording.gif" width="30%" height="auto" style="border-radius: 15px;" />
+<img src="./screenshots/baxe_app_screenshots_1.png" width="30%" height="auto" style="border-radius: 15px;" />
+<img src="./screenshots/baxe_app_screenshots_2.png" width="30%" height="auto" style="border-radius: 15px;" />
