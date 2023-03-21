@@ -1,29 +1,10 @@
-import {Dimensions, PixelRatio, StyleSheet} from 'react-native';
+import {Dimensions, PixelRatio} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
 
 const normalize = (size: number) => size / PixelRatio.getFontScale();
 
 const metrics = {
-  avatarRadius: {
-    small: 32,
-    medium: 40,
-    large: 52,
-  },
-  borderRadius: {
-    small: 10,
-    medium: 15,
-    large: 20,
-    xl: 40,
-  },
-  buttonRadius: 4,
-  icons: {
-    tiny: 15,
-    small: 20,
-    medium: 30,
-    large: 45,
-    xl: 50,
-  },
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
 };
@@ -33,83 +14,61 @@ const spacing = {
   small: 10,
   medium: 15,
   large: 20,
-  huge: 60,
+  xl: 60,
 };
 
-const palette = {
-  black: '#000000',
-  gray: '#DEE0E2', // For main header
-  grayAlt: '#91969F', // used mainly in fonts
-  grayAlt2: '#F4F4F5', // used mainly for blocks
-  orangeGradient: ['#FF3B61', '#FF9921'],
-  silverGradient: ['#C4CEE0', '#FAFBFF'],
-  silver: '#B7BDCD',
-  whiteGradient: [ '#FFFFFF', '#EBEBEB'],
+const sizes = {
+  icons: {
+    tiny: 15,
+    small: 20,
+    medium: 30,
+    large: 45,
+    xl: 50,
+  },
 };
+
+const radius = {
+  avatar: {
+    small: 32,
+    medium: 40,
+    large: 52,
+  },
+  borders: {
+    small: 10,
+    medium: 15,
+    large: 20,
+    xl: 40,
+  },
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const getThemePalette = (isDarkMode: boolean) =>
+  isDarkMode ? darkPalette : lightPalette;
+
+const lightPalette = {
+  black: '#000000',
+  gray: '#DEE0E2',
+  grayAlt: '#91969F',
+  grayAlt2: '#F4F4F5',
+  orangeGradient: ['#FF3B61', '#FF9921'],
+  pink: 'rgba(255, 59, 97, 1)',
+  silverGradient: ['#C4CEE0', '#FAFBFF'],
+  silverGradientAlt: ['#D7D0E6', '#A2B3CA'],
+  silver: '#B7BDCD',
+  tealGradient: ['#520D8C', '#31C9B1'],
+  violetGradient: ['#FF3B61', '#520D8C'],
+  white: '#fff',
+  whiteGradient: ['#FFFFFF', '#EBEBEB'],
+};
+
+const darkPalette = {};
+
+const palette = lightPalette;
 
 const typography = {
-  primary: 'Santral',
-  secondary: 'Dank-Mono',
+  primary: 'Santral-Bold',
+  secondary: 'Santral-Light',
+  tertiary: 'FONTSPRING DEMO - Torus Pro SemiBold',
 };
 
-const colors = {
-  bgColor: (isDarkMode: boolean): {backgroundColor: string} => ({
-    backgroundColor: isDarkMode ? colors.darker : colors.lighter,
-  }),
-  headerBackground: palette.midnightblue,
-  tabBarIcon: palette.lightslategray,
-  tabBarIconFocused: palette.white,
-  titleColor: palette.white,
-  text: palette.lightslategray,
-  title: palette.black,
-  subtitle: palette.grayAlt,
-};
-
-const commonStyles = StyleSheet.create({
-  tabBar: {
-    backgroundColor: colors.background,
-    shadowColor: palette.black,
-    shadowOffset: {width: 0, height: -1},
-    // shadowOpacity: 0.5,
-  },
-  tabBarLabel: {
-    // fontFamily: typography.primary,
-    fontSize: 10,
-  },
-  container: {
-    // flex: 1,
-    backgroundColor: colors.background,
-  },
-  title: {
-    color: colors.titleColor,
-    fontSize: normalize(36),
-    fontWeight: '700',
-    fontFamily: typography.primary,
-  },
-  titleSmall: {
-    color: colors.titleColor,
-    fontSize: normalize(18),
-    fontWeight: '700',
-    fontFamily: typography.primary,
-    paddingBottom: spacing.small,
-  },
-  textMedium: {
-    fontFamily: typography.primary,
-    color: colors.text,
-    fontSize: normalize(16),
-    lineHeight: 19.1,
-  },
-  textSmall: {
-    fontFamily: typography.primary,
-    fontWeight: '400',
-    color: colors.text,
-    fontSize: normalize(14),
-    lineHeight: 16.37,
-  },
-  header: {
-    color: colors.text,
-    fontSize: 30,
-  },
-});
-
-export {commonStyles, colors, metrics, normalize, spacing, palette, typography};
+export {metrics, normalize, sizes, spacing, palette, radius, typography};
